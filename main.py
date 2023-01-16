@@ -21,33 +21,12 @@ def rotate_counter_clockwise():
 
 
 def clean_slate():
+    tim.home()
     tim.clear()
 
 
 my_screen.listen()
 
-# def etch_a_sketch(key_used):
-#     movements: {
-#         "w": "move_forward",
-#         "s": "move_backwards",
-#         "d": "rotate_clockwise",
-#         "a": rotate_counter_clockwise,
-#     }
-#
-
-
-# my_screen.onkey(key="w", fun=move_forward)
-# my_screen.onkey(key="s", fun=move_backwards)
-# while True:
-#     # key_used =
-#     etch_a_sketch(key_used = input())
-#
-# movements: {
-#     "w": "move_forward",
-#     "s": "move_backwards",
-#     "d": "rotate_clockwise",
-#     "a": rotate_counter_clockwise,
-# }
 my_screen.onkey(fun=move_forward, key="w")
 my_screen.onkey(fun=move_backwards, key="s")
 my_screen.onkey(fun=rotate_clockwise, key="d")
